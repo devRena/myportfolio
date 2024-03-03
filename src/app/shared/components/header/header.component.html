@@ -1,1 +1,29 @@
-<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+<div
+  (window:scroll)="onScroll($event)"
+  class="container_wrapper"
+  [ngClass]="{ 'black-background': showBackground }"  
+>
+  <div class="container">
+    <a id="logo" href="#"><span>dev</span> Rena</a>
+    <nav [class.active]="isMenuOpen">
+      <ul>
+        <li>
+          <a id="home" href="#home">Home</a> 
+        </li>
+        <li>
+          <a id="about" href="#about">About</a>
+        </li>
+        <li>
+          <a id="projects-preview" href="#projects-preview">Projects</a>
+        </li>
+        <li>
+          <a id="experience" href="#experience">Experiece</a>
+        </li>
+        <li>
+          <a id="contact" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <button class="toggler-menu" (click)="toggleMenu()"><span></span></button>
+    </nav>
+  </div>
+</div>

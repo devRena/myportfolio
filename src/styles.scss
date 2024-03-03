@@ -1,5 +1,5 @@
 // Custom Theming for Angular Material
-@use "@angular/material" as mat;
+@use '@angular/material' as mat;
 // Plus imports for other components in your app.
 
 @include mat.core();
@@ -41,7 +41,7 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
   color: #fff;
   background: linear-gradient(
     90deg,
@@ -51,4 +51,12 @@ body {
     #040e18 80.28%,
     #050c16 101.48%
   );
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: none;
+  }
 }

@@ -1,0 +1,18 @@
+footer {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffffbf;
+  font-size: 1rem;
+
+  .container {
+    max-width: 1320px;
+    padding-right: calc(1.5rem * 0.5);
+    padding-left: calc(1.5rem * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+    .text-center {
+      text-align: center;
+    }
+  }
+}
